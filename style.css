@@ -44,4 +44,34 @@ select {
   /*flex-direction: column;*/
   justify-content: center;
   align-items: center;
+  
+  background-color: #e9e4dd;
+  
+  font-size: 60px;
+  font-family: 'Righteous', cursive;
+  color: aliceblue;
+  
 }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  border: solid rgba(39,80,9,.8) 10px;
+  
+  box-shadow: 20px 20px  rgba(167, 175, 112, 0.75);
+  background: linear-gradient(140deg, rgba(196,218,61,1) 0%, rgba(110,127,14,1) 69%, rgba(39,80,9,1) 100%);
+  
+  font-weight: 800;
+   
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+
