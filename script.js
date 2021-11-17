@@ -13,7 +13,8 @@ const generateArray = function(amount) {
     
     //console.log("az amount egy szam");
     for (let i = 0; i < amount; i++) {
-      returnArray.push(`${i}`);
+      
+      returnArray.push(`${(i < 10 ? '00' : i < 100 ? '0' : '') + i}`);
     }
   }
   else {
@@ -33,10 +34,12 @@ const loadEvent = function() {
   //console.log(generateArray([2]));
 
   const root = document.getElementById("root");
-  const list = generateArray(4);
+  const list = generateArray(200);
   
   if (list[0] !== "error") {
+
     for (const item of list) {
+      
       root.insertAdjacentHTML("beforeend", `<div>${item}</div>`);
     }
   }
