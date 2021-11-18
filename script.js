@@ -12,10 +12,28 @@ const generateArray = function(amount) {
   if (!Number.isNaN(amount)) {
     
     //console.log("az amount egy szam");
+    
+    /*
     for (let i = 0; i < amount; i++) {
-      
+
+      returnArray.push(`${i}`);
       returnArray.push(`${(i < 10 ? '00' : i < 100 ? '0' : '') + i}`);
     }
+    */
+
+    for (let i = 0; i < 10; i++) {
+      returnArray.push("00"+i);
+    }
+
+    for (let i = 10; i < 100; i++) {
+      returnArray.push("0"+i);
+    }
+    
+    for (let i = 100; i < amount; i++) {
+      returnArray.push(i);
+    }
+    
+
   }
   else {
     //console.log("az amount nem egy szam");
